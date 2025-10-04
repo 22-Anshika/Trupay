@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <title>Trupay</title>
+
+       <style>
+              @tailwind base;
+              @tailwind components;
+              @tailwind utilities;
+
+              /* Custom animation */
+              @layer utilities {
+                     @keyframes moveCLogo {
+                            0% { transform: translateY(0); }
+                            100% { transform: translateY(-50%); }
+                     }
+
+                     .animate-moveCLogo {
+                            animation: moveCLogo 13s linear infinite;
+                     }
+              }
+
+              /* gradient */
+              .logo-mask {
+                     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+                     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+              }
+
+       </style>
+
+</head>
+
+<body class="bg-black">
+       
+       <div class="overflow-x-hidden relative w-full">
+
+              <!-- navbar -->
+              <nav>
+              <div class="relative w-[970px] mx-auto flex items-center justify-around">
+
+                     <!-- logo -->
+                     <a href="/" class="cursor-pointer py-1 pr-4">
+                            <img src="./w1.jpg" width="70px" height="50px" class="hue-rotate-140">
+                     </a>
+
+                     <!-- navbar -->
+                     <ul class="flex space-x-5 hue-rotate-140">
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Payments</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Banking</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Corpotate Card</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Payroll</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Resources</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Support</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                            <li class="text-sm text-pink-300 py-5 hover:text-fuchsia-700 cursor-pointer transition-all duration-200 group relative">
+                                   <a href="#">Pricing</a>
+                                   <div class="absolute bottom-0 w-full h-1 bg-fuchsia-700 hidden group-hover:block transition-all duration-200"></div>
+                            </li>
+
+                     </ul>
+
+                     <div class="flex space-x-6 hue-rotate-140">
+                            <img src="./pay.jpg" width="60px" height="70px" class="hue-rotate-140">
+
+                            <button class="py-1 px-3 text-pink-300 border-pink-400 text-xs border cursor-pointer rounded font-bold">Log in</button>
+
+                            <button class="flex py-1 px-2 text-pink-300 border-pink-400 cursor-pointer text-xs border rounded font-bold bg-black hover:text-fuchsia-700 transition-all duration-200">
+                                   <p class="mt-1">Sign up</p>
+                                   <img src="./cursor.jpg" width="23px" height="10px">
+                            </button>
+
+                     </div>
+
+              </div>
+              </nav>
+
+              <!-- hero section -->
+              <section class="relative w-[970px] -top-[2.3rem] flex overflow-hidden justify-center items-center mx-auto">
+                     <div class="w-[970px] -mt-12 max-w-[970px] ml-15 flex justify-center items-center mx-auto">
+                            
+                            <!-- left part -->
+                            <div class="space-y-8 left-0">
+                                   <h1 class="text-violet-500 font-black text-6xl opacity-90">Power your finance, grow your business</h1>
+                                   <div class="w-6 h-1 bg-green-500"></div>
+                                   <p class="text-violet-400 text-[17px] opacity-70">Accept payments from customers.
+                                   Automate payouts to vendors & employees. 
+                                   Never run out of working capital.
+                                   </p>
+                                   <button class="width-auto py-3 px-4 cursor-pointer text-white border-violet-600 text-sm border rounded font-bold bg-violet-600 hover:bg-violet-900 hover:opacity-90 hover:border-violet-900 transition-all duration-200">Sign Up Now</button>
+
+                            </div>
+
+
+                            <!-- right part -->
+                            <div>
+                                   <img src="./c.jpg" class="max-w-[600px] hue-rotate-270 overflow-hidden">
+                            </div>
+                     
+                     
+                     </div>
+              </section>
+       
+              <!-- feature section 1 -->
+              <section class="relative w-full -top-[5.9rem] max-w-[970px] mx-auto">
+                     <img src="./Gradient Collection - Song hojong.jpg" class="opacity-47  absolute -top-[99px] grayscale -left-[435px] overflow-hidden" loading="lazy">
+                     <img src="./Gradient Collection - Song hojong.jpg" class=" opacity-47 absolute top-[379px] -right-[435px] grayscale rotate-180 overflow-hidden" loading="lazy">
+                     
+                     <div class="relative w-11/12  w-[970px] mx-auto pt-4">
+                            
+                            <!-- heading -->
+                            <h2 class="font-medium text-zinc-300 text-2xl text-center leading-[2.3]">
+                                   Accept Payments with Trupay Payment Suite
+                            </h2>
+                            <div class="w-6 h-1 bg-zinc-400 mx-auto"></div>
+                            
+                            <!-- content-box -->
+                            <div class="w-full mt-11 bg-black flex rounded-md relative px-11 py-15 min-h-[450px] border-1 border-zinc-700">
+                                   
+                                   <!-- left-section -->
+                                   <div class="flex flex-col gap-110 w-full max-w-[450px]">
+                                          <h3 class="text-zinc-300 text-3xl mt-0 leading-11">Supercharge your business with the all-powerful 
+                                                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600">Payment Gateway</span>
+                                          </h3>
+                                          <ul class="text-zinc-300 space-y-3 w-full -mt-101">
+                                                 <li>
+                                                        <span>✔︎ 100+ Payment Methods</span>
+                                                 </li>
+                                                 <li>
+                                                        <span>✔︎ Industry Leading Success Rate</span>
+                                                 </li>
+                                                 <li>
+                                                        <span>✔︎ Superior Checkout Experience</span>
+                                                 </li>
+                                                 <li>
+                                                        <span>✔︎ Easy to Integrate</span>
+                                                 </li>
+                                                 <li>
+                                                        <span>✔︎ Instant Settlements from Day 1</span>
+                                                 </li>
+                                                 <li>
+                                                        <span>✔︎ In-depth Reporting and Insights</span>
+                                                 </li>
+                                          </ul>
+
+                                          <!-- for button & hyper-link-->
+                                          <div class="flex flex-row items-center space-x-5 -mt-95">
+                                                 <button class="width-auto py-3 px-4 border-teal-500 cursor-pointer text-sm opacity-90 rounded font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 hover:opacity-50 transition-all duration-200">Sign Up Now →</button>
+                                                 <div>
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-bold hover:text-zinc-500 transition-all duration-200">Know More →</a>
+
+                                                 </div>
+                                          </div>
+                                   </div>
+
+                                   <div>
+                                          <img src="./3D Illustrations for AliKassa - Roman Zilalov.jpeg" class="max-w-[470px] absolute right-0 top-20 opacity-90 overflow-hidden">
+                                   </div>
+
+                            </div>
+
+       
+                            <!-- box-card section -->
+
+                            <div class="bg-black grid grid-cols-3 gap-9 w-[975px] mx-auto mt-19 overflow-hidden">
+                                   <!-- box-1 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-gray-700 h-full w-full opacity-35 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.278 0.033 256.848)"
+                                                        stroke="zinc-700" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Payment Links</h3>
+                                                        <p class="mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-semibold hover:text-zinc-500 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+                                   
+                                   <!-- box-2 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-gray-700 h-full w-full opacity-35 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.278 0.033 256.848)"
+                                                        stroke="zinc-700" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Payment Pages</h3>
+                                                        <p class="mt-6">Take your store online instantly with zero coding. Accept international & domestic payments.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-semibold hover:text-zinc-500 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+              
+                                   <!-- box-3 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-gray-700 h-full w-full opacity-35 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.278 0.033 256.848)"
+                                                        stroke="zinc-700" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Payment Buttons</h3>
+                                                        <p class="mt-6">Create, Copy & Collect With Payment Button. Collect one-time or subscription payments & more.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-semibold hover:text-zinc-500 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+              
+                                   <!-- box-4 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-gray-700 h-full w-full opacity-35 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.278 0.033 256.848)"
+                                                        stroke="zinc-700" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Subscriptions</h3>
+                                                        <p class="mt-6">Subscription plans with automated recurring transactions on various payment modes.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-semibold hover:text-zinc-500 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+              
+                                   <!-- box-5 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-gray-700 h-full w-full opacity-35 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.278 0.033 256.848)"
+                                                        stroke="zinc-700" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Route</h3>
+                                                        <p class="mt-6">Split incoming payments automatically to vendor’s accounts, manage marketplace money flow...</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-semibold hover:text-zinc-500 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+              
+                                   <!-- box-6 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-gray-700 h-full w-full opacity-35 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.278 0.033 256.848)"
+                                                        stroke="zinc-700" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Smart Collect</h3>
+                                                        <p class="mt-6">Automatically reconcile incoming NEFT, RTGS, IMPS, UPI payments using Virtual Accounts & UPI-IDs.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 font-semibold hover:text-zinc-500 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+                            
+                            </div>
+
+                     </div>
+              </section>
+
+              <!-- feature section 2 -->
+              <section class="relative w-full max-w-[970px] mx-auto">
+                     <div class="relative w-11/12  w-[970px] mx-auto pt-4">
+
+                            <h2 class="font-medium text-slate-300 text-2xl text-center leading-[2.3] mt-20">Explore Trupay Business Banking</h2>
+                            <div class="w-6 h-1 bg-slate-400 mx-auto"></div>
+
+                            <!-- main feature box -->
+                            <div class="w-full flex relative">
+                                   <img src="./Gradient Collection - Song hojong.jpg" class="opacity-30  absolute -top-[166px] -left-[435px] overflow-hidden" loading="lazy">
+                                   <img src="./Gradient Collection - Song hojong.jpg" class=" opacity-30 rotate-180 absolute top-[252px] -right-[435px] overflow-visible" loading="lazy">
+
+                                   <!-- content-box -->
+                                   <div class="w-full mt-13 bg-black flex rounded-md relative px-11 py-13 min-h-[470px] border-1 border-slate-700">
+                                          <!-- left-box -->
+                                          <div class="flex flex-col gap-110 w-full max-w-[450px]">
+                                                 <h3 class="text-slate-300 text-3xl mt-7 leading-11">Manage your company's finances with Trupay <span class="text-blue-800">Business Banking</span></h3>
+
+                                                 <ul class="text-slate-300 space-y-3 w-full -mt-101">
+                                                        <li>
+                                                               <span>✔︎ Open a fully digital currant account</span>
+                                                        </li>
+                                                        <li>
+                                                               <span>✔︎ Automate payables & compliment payments</span>
+                                                        </li>
+                                                        <li>
+                                                               <span>✔︎ Simplify and track spends with corporate cards</span>
+                                                        </li>
+                                                        <li>
+                                                               <span>✔︎ View financial insights at a glance</span>
+                                                        </li>
+                                                 </ul>
+       
+                                                 <div class="flex flex-row items-center space-x-5 -mt-95">
+                                                        <div class="group flex items-center">
+                                                               <button class="relative w-35 py-3 px-2 border-blue-800 flex justify-start text-slate-200 opacity-80 text-sm border cursor-pointer rounded font-bold bg-blue-800 group-hover:bg-slate-400 group-hover:border-slate-400 transition-all duration-200">Sign Up</button>
+                                                               <div class="w-11 h-[57px] bg-slate-300 absolute skew-x-[20deg] left-29 flex items-center cursor-pointer group-hover:bg-slate-400 transition-all duration-200 justify-center"><p class="-skew-x-[20deg] font-bold">→</p></div>
+                                                        </div>
+                                                        <!-- hyper-link -->
+                                                        <div>
+                                                               <a href="#" class="text-blue-800 font-semibold hover:text-slate-400 transition-all duration-200 cursor-pointer" >Know more →</a>
+                                                        </div>
+                                                        
+                                                 </div>
+                                          </div>
+
+                                          <!-- background-image -->
+                                          <img src="./wallet.jpg" class="max-w-[470px] opacity-80 absolute right-0 top-0">
+                                   </div>
+
+                            </div>
+
+                            <!-- box-card section -->
+                            <div class="grid grid-cols-3 gap-9 w-[975px] mx-auto mt-19">
+                                   <!-- box-1 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-slate-600 h-full w-full opacity-40 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.208 0.042 265.755)"
+                                                        stroke="slate-600" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Current Account</h3>
+                                                        <p class="mt-6">Current accounts for fast-growing businesses, supported by the best-in-class technology.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-blue-800 font-semibold hover:text-slate-400 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+                                   
+                                   <!-- box-2 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-slate-600 h-full w-full opacity-40 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.208 0.042 265.755)"
+                                                        stroke="slate-600" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Capital & Credit</h3>
+                                                        <p class="mt-6">Instant additional cash and corporate cards designed for growing businesses.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-blue-800 font-semibold hover:text-slate-400 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+              
+                                   <!-- box-3 -->
+                                   <div class="w-full min-h-[15rem] relative cursor-pointer">
+                                          <!-- box-shape -->
+                                          <svg 
+                                                 viewBox="0 0 349.32501220703125 225" 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 preserveAspectRatio="none"
+                                                 class="stroke-2 stroke-slate-600 h-full w-full opacity-40 absolute z-[15] featureCardSVG transition-all duration-200"
+                                                 style="stroke-opacity: 1; background-color: black;">
+                                                 <path 
+                                                        d="m 6 6 
+                                                        a 6 6 0 0 1 6 -6 
+                                                        h 250.32501220703125 
+                                                        a 16 16 0 0 1 11 5 
+                                                        l 77 77 
+                                                        a 16 16 0 0 1 5 11 
+                                                        v 126 
+                                                        a 6 6 0 0 1 -6 6 
+                                                        h -337.32501220703125 
+                                                        a 6 6 0 0 1 -6 -6 
+                                                        z"
+                                                        fill="oklch(0.208 0.042 265.755)"
+                                                        stroke="slate-600" 
+                                                        stroke-width="1"/>
+                                          </svg>
+                                          
+                                          <!-- box-content -->
+                                          <div class="absolute inset-0 z-[20] w-full h-full flex flex-col text-zinc-300 justify-between pl-5 py-6 pr-8">
+                                                 <!-- box-text -->
+                                                 <div>
+                                                        <h3 class="font-bold text-xl leading-[1.2]">Payouts</h3>
+                                                        <p class="mt-6">Make simple, reliable & secure payouts to bank accounts, UPI IDs, or wallets.</p>
+                                                 </div>
+                     
+                                                 <!-- box-hyperlink know more -->
+                                                 <div class="mt-7">
+                                                        <a href="#" class="text-blue-800 font-semibold hover:text-slate-400 transition-all duration-200" >Know more →</a>
+                                                 </div>
+                     
+                     
+                                          </div>
+                                   
+                                   </div>
+                            
+                            </div>
+
+                            <!-- demo-box-section -->
+                            <div class="w-full flex flex-row mt-15 justify-evenly items-center mx-auto border-1 border-slate-700 mb-24 gap-y-6 p-8 relative rounded-md">
+                                   <p class="text-slate-300 text-lg">Check out the live demo to learn how  TrupayX  works. <span class="font-bold"> No Sign-up required ! </span></p>
+                                   
+                                   <button class="relative w-55 py-3 px-1 border-blue-800 flex justify-start text-slate-200 opacity-80 text-sm border cursor-pointer rounded font-bold bg-blue-800 hover:bg-slate-400 hover:border-slate-400 transition-all duration-200">Check out the demo</button>
+                                   <div class="w-11 h-[56px] bg-slate-300 absolute skew-x-[20deg] right-20 flex items-center cursor-pointer hover:bg-slate-400 transition-all duration-200 justify-center"><p class="-skew-x-[20deg] font-bold">→</p></div>
+                                   
+                            </div>
+
+                     </div>
+              </section>
+
+              <!-- new feature section 3 -->
+              <section class="relative mt-[15rem]">
+                     <div class="max-w-[970px] w-11/12 mt-50 mx-auto relative">
+                            <img src="./bcbg.jpg" class="w-[273px] opacity-70 left-[300px] grayscale absolute -top-[5rem] -z-[10]">
+                            <img src="./bcbg.jpg" class="w-[273px] opacity-70 -right-[2rem] grayscale absolute -top-[5rem] -z-[10]">
+
+                            <div class="w-full grid grid-cols-3 gap-x-5 gap-y-5 relative z-[100] top-[9rem] ">
+                                   <!-- item-1 -->
+                                   <div class="relative text-stone-200 flex items-center text-5xl leading-[4.3rem] -z-[100]">
+                                          <h2>New in the 
+                                                 <span class="text-stone-500">Trupay
+                                                 </span> <br>
+                                          Product Suite
+                                          </h2>
+
+                                   </div>
+
+                                   <!-- card-1 -->
+                                   <div class="w-full max-h-[350px] py-3 px-5 cursor-pointer border-1 drop-shadow-2xl border-stone-700 hover:scale-110 hover:bg-neutral-900 hover:border-neutral-900 rounded transition-all duration-400">
+                                          <img src="./36 Days Of Type _ 4th Edition - Andres Higueros.jpg" class="h-15 w-15 opacity-90 rounded-full">
+                                          <h3 class="text-stone-200 py-5 font-bold leading-normal text-xl">Corporate Cards</h3>
+                                          <p class="text-stone-400 font-medium opacity-70">Simplify your recurring, international, and team expenses with savings on every spend. Save up to 10 lacs every month.</p>
+                                          <div class="mt-7">
+                                                 <a href="#" class="text-stone-400 font-semibold hover:text-stone-200 transition-all duration-200" >Know more →</a>
+                                          </div>
+
+                                   </div>
+
+                                   <!-- card-2 -->
+                                   <div class="w-full max-h-[350px] py-3 px-5 cursor-pointer border-1 drop-shadow-2xl border-stone-700 hover:scale-110 hover:bg-neutral-900 hover:border-neutral-900 rounded transition-all duration-400">
+                                          <img src="./36 Days Of Type _ 4th Edition - Andres Higueros.jpg" class="h-15 w-15 opacity-90 rounded-full">
+                                          <h3 class="text-stone-200 py-5 font-bold leading-normal text-xl">UPI AutoPay</h3>
+                                          <p class="text-stone-400 font-medium opacity-70">Allow customers to set up recurring payments using UPI Apps.</p>
+                                          <div class="mt-7">
+                                                 <a href="#" class="text-stone-400 font-semibold hover:text-stone-200 transition-all duration-200" >Know more →</a>
+                                          </div>
+
+                                   </div>
+
+                                   <!-- card-3 -->
+                                   <div class="w-full max-h-[350px] py-3 px-5 cursor-pointer border-1 drop-shadow-2xl border-stone-700 hover:scale-110 hover:bg-neutral-900 hover:border-neutral-900 rounded transition-all duration-400">
+                                          <img src="./36 Days Of Type _ 4th Edition - Andres Higueros.jpg" class="h-15 w-15 opacity-90 rounded-full">
+                                          <h3 class="text-stone-200 py-5 font-bold leading-normal text-xl">Magic Checkout</h3>
+                                          <p class="text-stone-400 font-medium opacity-70">Improve your order conversion rates & reduce return-to-origins. Boost your business by 20%.</p>
+                                          <div class="mt-7">
+                                                 <a href="#" class="text-stone-400 font-semibold hover:text-stone-200 transition-all duration-200" >Know more →</a>
+                                          </div>
+
+                                   </div>
+
+                                   <!-- card-4 -->
+                                   <div class="w-full max-h-[350px] py-3 px-5 cursor-pointer border-1 drop-shadow-2xl border-stone-700 hover:scale-110 hover:bg-neutral-900 hover:border-neutral-900 rounded transition-all duration-400">
+                                          <img src="./36 Days Of Type _ 4th Edition - Andres Higueros.jpg" class="h-15 w-15 opacity-90 rounded-full">
+                                          <h3 class="text-stone-200 py-5 font-bold leading-normal text-xl">Payment Button</h3>
+                                          <p class="text-stone-400 font-medium opacity-70">Accept payments on your website in less than 5 minutes. No developer needed.</p>
+                                          <div class="mt-7">
+                                                 <a href="#" class="text-stone-400 font-semibold hover:text-stone-200 transition-all duration-200" >Know more →</a>
+                                          </div>
+
+                                   </div>
+
+                                   <!-- card-5 -->
+                                   <div class="w-full max-h-[350px] py-3 px-5 cursor-pointer border-1 drop-shadow-2xl border-stone-700 hover:scale-110 hover:bg-neutral-900 hover:border-neutral-900 rounded transition-all duration-400">
+                                          <img src="./36 Days Of Type _ 4th Edition - Andres Higueros.jpg" class="h-15 w-15 opacity-90 rounded-full">
+                                          <h3 class="text-stone-200 py-5 font-bold leading-normal text-xl">Instant Settlements</h3>
+                                          <p class="text-stone-400 font-medium opacity-70">Get your payments settled instantly, 24/7, even on weekends and holidays. Improve your cash flow and grow your business without delays.</p>
+                                          <div class="mt-7">
+                                                 <a href="#" class="text-stone-400 font-semibold hover:text-stone-200 transition-all duration-200" >Know more →</a>
+                                          </div>
+
+                                   </div>
+                            </div>
+                     </div>
+
+              </section>
+
+              <!-- core features -->
+              <section class="w-full mt-[20rem]">
+                     <div class="relative w-11/12 w-[970px] mx-auto pt-4">
+                            
+                            <h2 class="text-fuchsia-400 mx-auto font-bold text-center text-2xl">Features</h2>
+                            <div class="w-6 h-1 mt-3 bg-slate-300 mx-auto"></div>
+                            <p class="text-slate-500 text-center text-sm opacity-80 max-w-[550px] leading-5 mx-auto p-4">Empower your business with all the right tools to accept online payments and provide the best customer experience. </p>
+                            
+                            <div class="grid grid-cols-4 gap-[2rem] mt-10">
+
+                                   <!-- card-1 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon1.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">Instant Activation</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-2 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon2.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">Easy Integration</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">With plugins for all major platforms and languages, integrate and go live with Trupay in less than an hour.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-3 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon3.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">API Driven</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">Build your business for scale with our complete API-driven automation that requires zero manual intervention.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-4 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon6.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">100+ Payment Modes</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI, Wallets, etc.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-5 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon7.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">Simple Pricing</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">Our innovative payment solutions with competitive pricing make payments simpler.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-6 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon8.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">Best in Industry Support</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">Always available email, phone, and chat-based support to help you in your every step.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-7 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon9.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">Dashboard Reporting</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">Real-time data and insights on your Trupay Dashboard to make informed business decisions.</p>
+                                          
+                                   </div>
+
+                                   <!-- card-8 -->
+                                   <div class="py-4 flex flex-col justify-start gap-2 aspect-square">
+                                          <img src="./icon5.jpg" class="h-13 w-13 opacity-70 contrast-200 grayscale rounded-full">
+                                          <h3 class="text-fuchsia-400 font-bold text-lg">Secure</h3>
+                                          <p class="text-slate-500 max-w-[200px] text-sm opacity-80">PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.</p>            
+                                   </div>
+
+                                   
+                            </div>
+                            
+                     </div>
+
+              </section>
+
+              <!-- line -->
+              <!-- <section class="w-full mt-15 mb-50">
+                     <div class="max-w-[970px] mx-auto">
+                            <div class="h-[2px] bg-gradient-to-r from-teal-400 via-purple-500 to-pink-500 mx-auto"></div>
+                     </div>
+
+              </section> -->
+
+              <!-- logo join section -->
+              <section class="pt-10 pb-12 mt-32">
+                     <div class="relative w-11/12 max-w-[970px] flex overflow-hidden gap-2 mx-auto pt-4">
+                            <!-- left part -->
+                            <div class="flex flex-col justify-center items-start max-w-[calc(100%-416px)]">
+                                   <h3 class="text-indigo-500 text-2xl mt-5 font-bold">Join the 50,00,000+ businesses using Trupay</h3>
+                                   <div class="w-6 h-1 mt-4 bg-slate-300"></div>
+                                   <p class="text-slate-500 leading-7 pt-11">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+                                   <p class="text-slate-500 leading-7 pt-7">Focus on ur business while we handle the complexities of payments for you.</p>
+                            </div>
+                            
+                            <!-- right part -->
+
+                            <div class="h-[440px] w-[570px] overflow-y-hidden relative logo-mask">
+                                   <div class="absolute w-full h-auto animate-moveCLogo">
+                                          <img src="./biglogo.jpg" width="900px" class="contrast-200">
+                                          <img src="./biglogo.jpg" width="900px" class="contrast-200">
+                                   <div>
+
+                                   </div>
+                            </div>
+                     </div>
+              </section>
+
+              <!-- testimonial -->
+              <section class="relative">
+                     <div class="w-11/12 max-w-[1190px] mt-[9rem] mx-auto relative">
+                            <img src="./Gradient Collection - Song hojong.jpg" class="opacity-50 absolute grayscale -left-[250px] -top-[150px] -z-[10] overflow-hidden" loading="lazy">
+                            <h2 class="font-medium text-slate-200 text-2xl text-center leading-[1.4]">An Experience <br> People Love to Talk About</h2>
+                            <div class="w-6 h-1 mt-3 bg-teal-400 mx-auto"></div>
+
+
+                            <!-- left-button -->
+                            <button><img src="./larrow.jpeg" class="absolute top-1/2 left-0 rounded-full h-15 w-15"></button>
+
+                            <!-- right-button -->
+                            <button><img src="./rarrow.jpeg" class="absolute right-0 top-1/2 rounded-full h-15 w-15"></button>
+
+
+                            <!-- main-content box -->
+                            <div class="flex gap-25 mt-13 max-w-[1000px] mx-auto items-center">
+                                   <!-- left-part -->
+                                   <div>
+                                          <img src="./ceo.jpeg" class="h-90 w-90 opacity-80 rounded">
+                                   </div>
+
+                                   <div class="flex flex-col items-start">
+                                          <img src="./2quotes.jpeg" class="h-25 w-25 opacity-40 -z-[12] scale-x-[-1]">
+                                          <h2 class="text-zinc-200 -mt-7 text-3xl font-thin opacity-80 leading-9">Readymade Closed Wallet <br> Solution For Quick Refunds</h2>
+                                          <a href="#" class="text-indigo-500 underline"><em>learn more</em></a>
+                                          <h3 class="text-zinc-300 mt-4 font-bold text-xl">Park Bo-gum</h3>
+                                          <p class="text-zinc-400">CEO, TruPay Engineering Company</p>
+                                          <img src="./cartoonceo.jpeg" class="h-23 w-23 mt-2 opacity-60 hue-rotate-140">
+
+                                   </div>
+
+                            </div>
+
+
+                            <!-- dots section -->
+                            <div class="flex justify-center mt-27 gap-3 mx-auto">
+                                   <div class="w-4 h-4 bg-gray-400 rounded-full"></div>
+                                   <div class="w-4 h-4 bg-indigo-700 rounded-full"></div>
+                                   <div class="w-4 h-4 bg-gray-400 rounded-full"></div>
+                                   <div class="w-4 h-4 bg-gray-400 rounded-full"></div>
+                                   <div class="w-4 h-4 bg-gray-400 rounded-full"></div>
+                                   <div class="w-4 h-4 bg-gray-400 rounded-full"></div>
+                                   <div class="w-4 h-4 bg-gray-400 rounded-full"></div>
+
+                            </div>
+
+
+                     </div>
+              </section>
+
+              <!-- CTA -->
+              <section class="w-full h-full mt-33">
+                     
+                     <!-- main content-box -->
+                     <div class=" w-11/12 max-w-[970px] flex justify-between space-x-20 relative items-center mx-auto  ">
+
+                            <!-- left-part -->
+                            <div>
+                                   <h2 class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-cyan-400 to-teal-500 text-2xl leading-[1.3]">Supercharge your business with Trupay</h2>
+                                   <div class="w-6 h-1 mt-4 bg-slate-300" ></div>
+                                   <p  class="text-transparent mt-4 bg-clip-text bg-gradient-to-r from-slate-400 via-gray-600 to-slate-400 font-medium drop-shadow-lg">Sign-up now to experience the future of payments and offer your customers the best checkout experience. </p>
+                                   <ul class="mt-9 text-sm text-transparent flex space-x-10 space-y-4 flex-wrap bg-clip-text bg-gradient-to-r from-slate-300 via-gray-500 to-slate-300 font-light">
+                                          <li>✔︎ Quick onboarding</li>
+                                          <li>✔︎ Access to entire product suite</li>
+                                          <li>✔︎ API access</li>
+                                          <li>✔︎ 24x7 support</li>
+                                   </ul>
+
+                                   <button class="width-auto mt-7 py-3 px-2 cursor-pointer text-black text-sm rounded font-bold bg-cyan-500 transition-all duration-300 hover:brightness-50">
+                                          Sign Up →
+                                      </button>
+                            </div>
+
+                            <!-- right-part -->
+                            <div>
+                                   <img src="./cta.jpeg" class="h-[23rem] w-[25rem] animate-pulse hue-rotate-310 scale-x-[-1]">
+
+                            </div>
+
+                     </div>
+
+              </section>
+
+              <!-- last-section -->
+              <section class="w-full h-full mt-33">
+                     <div class=" w-11/12 flex max-w-[970px] justify-center mx-auto space-x-10">
+                            <!-- first-Col -->
+                            <div class="max-w-[210px] mr-19 space-y-4">
+                                   <div class="mx-auto flex items-center">
+                                          <img src="./w1.jpg" width="60px" height="40px" class="grayscale">
+                                   </div>
+
+                                   <p class="text-sm text-xs -mt-5 text-zinc-600 overflow-visible z-[10]">Trupay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
+                                   <p class="text-sm text-xs text-zinc-600">TrupayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With TrupayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
+                                   <p class="text-sm text-xs text-zinc-600">Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Trupay.</p>
+                                   <p class="text-xs opacity-90 text-zinc-600 italic ">Disclaimer: The Trupay powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your TrupayX powered account is provided by our partner bank, in accordance with RBI regulations. Trupay itself is not a bank and doesn’t hold or claim to hold a banking license.</p>
+
+                                   <h3 class="text-indigo-700">SUBSCRIBE TO OUR NEWSLETTER</h3>
+
+                                   <div class="flex items-center border border-gray-600 overflow-hidden rounded-lg bg-gray-900">
+                                          <input type="email" placeholder="Enter your email" 
+                                            class="w-full px-2 py-2 text-xs bg-gray-900 text-white placeholder-gray-400 outline-none" />
+                                          <button class="px-2 py-2 text-xs text-indigo-500 font-semibold hover:text-teal-400 transition">
+                                          Subscribe
+                                          </button>
+                                   </div>
+
+                                   <div class="flex flex-row justify-between">
+                                          <img src="./certi1.jpeg" width="90px" height="90px">
+                                          <img src="./certi2.jpeg" width="90px" height="90px">
+                                   </div>
+
+                            </div>
+
+                            <!-- second-Col -->
+                            <div class="max-w-[215px] space-y-4 space-x-3 mt-25">
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">BANKING PLUS</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">TrupayX</a></li>
+                                                 <li><a href="">Current Accounts</a></li>
+                                                 <li><a href="">Payouts</a></li>
+                                                 <li><a href="">Payout Links</a></li>
+                                                 <li><a href="">Corporate Credit Card</a></li>
+                                                 <li><a href="">View Live Demo <span class="bg-green-600 text-white font-md rounded-md p-1">New</span></a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">LENDING</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Trupay Capital</a></li>
+                                                 <li><a href="">Instant Settlements</a></li>
+                                                 <li><a href="">Working Capital Loans</a></li>
+                                                 <li><a href="">Marketplace Instant Settlements</a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">RISK & FRAUD</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Thirdwatch</a></li>
+                                                 <li><a href="">PrePay CoD <span class="bg-green-600 text-white font-md rounded-md p-1">New</span></a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">BECOME A PARTNER</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Refer and Earn</a></li>
+                                                 <li><a href="">Onboarding APIs</a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">MORE</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Route</a></li>
+                                                 <li><a href="">Invoices</a></li>
+                                                 <li><a href="">Freelancer Payments</a></li>
+                                                 <li><a href="">International</a></li>
+                                                 <li><a href="">Flash Checkout</a></li>
+                                                 <li><a href="">UPI</a></li>
+                                                 <li><a href="">ePOS</a></li>
+                                                 <li><a href="">Checkout Demo</a></li>
+                                                 <li><a href="">TrupayX Payroll</a></li>
+                                          </ul>
+                                   </div>
+                            </div>
+
+                            <!-- third-Col -->
+                            <div class="max-w-[215px] space-y-4 mt-25">
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">ACCEPT PAYMENTS</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Payment Gateway</a></li>
+                                                 <li><a href="">Payment Pages</a></li>
+                                                 <li><a href="">Payment Links</a></li>
+                                                 <li><a href="">QR Codes</a></li>
+                                                 <li><a href="">Subscriptions</a></li>
+                                                 <li><a href="">Smart Collect</a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">DEVELOPERS</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Docs</a></li>
+                                                 <li><a href="">Integrations</a></li>
+                                                 <li><a href="">API Reference</a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">RESOURCES</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Blog</a></li>
+                                                 <li><a href="">Customer Stories</a></li>
+                                                 <li><a href="">Events</a></li>
+                                                 <li><a href="">Chargeback Guide</a></li>
+                                                 <li><a href="">Settlement Guide</a></li>
+                                                 
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">SOLUTIONS</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Education</a></li>
+                                                 <li><a href="">E-commerce</a></li>
+                                                 <li><a href="">SaaS</a></li>
+                                                 <li><a href="">BFSI</a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">FREE TOOLS</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">GST Calculator</a></li>
+                                                 <li><a href="">Online TDS Payments</a></li>
+                                                 <li><a href="">GST Number Search <span class="bg-green-600 text-white font-md rounded-md p-1">New</span></a></li>
+                                                 
+                                          </ul>
+                                   </div>
+                            </div>
+
+                            <!-- fourth-Col -->
+                            <div class="max-w-[215px] space-y-4 mt-25">
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">COMPANY</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">About Us</a></li>
+                                                 <li><a href="">Careers <span class="bg-green-600 text-white font-md rounded-md p-1"> We're hiring!</span></a></li>
+                                                 <li><a href="">Terms of Use</a></li>
+                                                 <li><a href="">Privacy Policy</a></li>
+                                                 <li><a href="">Grievance Redressal</a></li>
+                                                 <li><a href="">Responsible Disclosure</a></li>
+                                                 <li><a href="">Partners</a></li>
+                                                 <li><a href="">White Papers</a></li>
+                                                 <li><a href="">Corporate Information</a></li>
+                                          </ul>
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mb-1">HELP & SUPPORT</h3>
+                                          <ul class="text-sm text-indigo-500 space-y-2">
+                                                 <li><a href="">Support</a></li>
+                                                 <li><a href="">Knowledge base</a></li>
+                                          </ul>
+                                   </div>
+
+                                   
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mt-8">FIND US ONLINE</h3>
+                                   </div>
+
+                                   <div class="flex gap-1 opacity-90">
+                                          
+                                          <img src="./instagram.jpeg" class="w-9 h-9 rounded-md">
+                                          <img src="./FACEBOOK.jpeg" class="w-9 h-9 rounded-md">
+                                          <img src="./github.jpeg" class="w-7 h-7 mt-1 rounded-md">
+                                          <img src="./what do you think about the new brand.jpeg" class="w-9 h-9 rounded-md">
+                                          <img src="./_ (2).jpeg" class="w-9 h-9 rounded-md">
+                                   </div>
+
+                                   <div>
+                                          <h3 class="text-slate-500 font-medium mt-9 mb-1">REGD. OFFICE ADDRESS</h3>
+                                   </div>
+
+                                   <div>
+                                          <a href="" class="text-slate-300 opacity-80 text-sm">Trupay Software Private Limited,
+                                                 1st Floor, SJR Cyber,
+                                                 22 Laskar Hosur Road, Adugodi,
+                                                 Bengaluru, 560030,
+                                                 Karnataka, India
+                                                 CIN: U72200KA2013PTC097389</a>
+                                   </div>
+
+                                   <div class="text-slate-300 mt-7 opacity-80 text-sm">
+                                          <p>© Trupay 2022</p>
+                                          <p>All Rights Reserved</p>
+                                   </div>
+                            </div>
+                     </div>
+              </section>
+
+       </div>
+       
+</body>
+
+</html>
